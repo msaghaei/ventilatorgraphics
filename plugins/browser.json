@@ -1,0 +1,49 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "net.saghaei.ventilatorgraphics"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "net.saghaei.ventilatorgraphics"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "net.saghaei.ventilatorgraphics"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "net.saghaei.ventilatorgraphics"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "net.saghaei.ventilatorgraphics"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "net.saghaei.ventilatorgraphics"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "net.saghaei.ventilatorgraphics"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "net.saghaei.ventilatorgraphics"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "net.saghaei.ventilatorgraphics"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "net.saghaei.ventilatorgraphics"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "net.saghaei.ventilatorgraphics"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "net.saghaei.ventilatorgraphics"
+    }
+  }
+}
