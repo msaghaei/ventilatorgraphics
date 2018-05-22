@@ -25,7 +25,7 @@
             - فشار مقاومتی (P<sub>RES</sub>). فشار لازم برای فائق آمدن به مقاومت راه هوائی. P<sub>RES</sub> برابر با حاصل ضرب مقاومت راه هوائی در شدت جریان دمی است.<br/>
             - فشار الاستیک (P<sub>EL</sub>. فشار لازم برای فائق آمدن بر کمپلیانس ریه و قفسه صدری. P<sub>EL</sub> برابر با حاصل تقسیم حجم جاری بر کمپلیانس سیستم تنفس می باشد.
             </p>
-            <p style="direction: ltr;" align="left">
+            <p style="direction: ltr;" align="center">
             P<sub>AW</sub> = PEEP<sub>TOT</sub> + P<sub>RES</sub> + P<sub>EL</sub><br/>
             = PEEP<sub>TOT</sub> + (tidal volume / compliance) + (flow x resistance)<br/>
             P<sub>AW</sub> - PEEP<sub>TOT</sub> = (tidal volume / compliance) + (flow x resistance)
@@ -43,8 +43,11 @@
 ۴ – حجم جاری<br/>
 ۵ – تمام موارد فوق
             </p>
+            <p style="display: none;" id="detailedinfo">
+چنانچه هر کدام از اینها مسبب Auto-PEEP باشد جواب ۳ صحیح است.
+            </p>
             </div>
-            <div data-role="footer">
+            <div data-role="footer"><button id="toggleanswer" data-icon="check">پاسخ</button><script>$( "#toggleanswer" ).click(function() {$("#toggleanswer").text("۵ = پاسخ");$("#detailedinfo").toggle(true);});</script>
                 <h1>دکتر محمود سقائی</h1>
             </div>
         </div>

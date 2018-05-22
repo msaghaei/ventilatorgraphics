@@ -34,8 +34,63 @@
             ۴ - ثابت زمانی کوتاه به معنای افزایش مقاومت است<br/>
             ۵ - ثابت زمانی دمی به زمان دم بستگی دارد
             </p>
+            <div style="display: none;" id="detailedinfo">
+            پاسخ ۲<br/>
+            ثابت زمانی دم و بازدم با هم برابر نیستند زیرا مقاومت راه هوائی در هنگام دم کمتر است. بنابراین ثابت زمانی دمی کوتاهتر از بازدمی است<br/>
+            مقدار تغییر به ازای تعداد مختلف ثابت زمانی
+            <table data-role="table" id="table1" data-mode="reflow" class="ui-responsive">
+                <thead>
+                    <tr>
+                        <th>ثابت زمانی</th>
+                        <th>تغییر</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            ۱
+                        </th>
+                        <td>
+                            ۶۳٪
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            ۲
+                        </th>
+                        <td>
+                            ۸۶/۵٪
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            ۳
+                        </th>
+                        <td>
+                            ۹۵٪
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            ۴
+                        </th>
+                        <td>
+                            ۹۸٪
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            ۵
+                        </th>
+                        <td>
+                            ۹۹٪
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             </div>
-            <div data-role="footer">
+            </div>
+            <div data-role="footer"><button id="toggleanswer" data-icon="check">پاسخ</button><script>$( "#toggleanswer" ).click(function() {$("#toggleanswer").text("۲ = پاسخ");$("#detailedinfo").toggle(true);});</script>
                 <h1>دکتر محمود سقائی</h1>
             </div>
         </div>

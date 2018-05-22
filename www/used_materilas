@@ -1,0 +1,12 @@
+            <p>
+            </p>
+            <img src=".jpg" width="100%" />
+            <p>
+            </p>
+
+
+            <p style="display: none;" id="detailedinfo">
+            
+            </p>
+
+$("#detailedinfo").toggle(true);
