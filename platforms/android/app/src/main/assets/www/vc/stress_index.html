@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>اندکس استرس</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Language" content="fa">
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/rtl.jquery.mobile-1.4.0.js"></script>
+        <link href="../css/themes/default/rtl.jquery.mobile-1.4.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="stress_index">
+            <div data-role="header">
+                <a rel="external" href="index.html" data-icon="back" data-iconpos="left">بازگشت</a>
+                <h1>اندکس استرس</h1>
+            </div>
+            <div data-role="content">
+            <h1>اندکس استرس</h1>
+            <p>
+            تشخیص تغییرات کمپلیان حاصل از تغییات شیب منحنی فشار - زمان که در مبحث قبل آمد، را می توان بصورت یک مدل ریاضی ساده (منظور یک فرمول ریاضی است) مشخص نمود. این مدل ریاضی بدین صورت است:
+            </p>
+            <p style="direction= ltr;" align="center">
+            P<sub>AW</sub> = k × t<sup>b</sup>
+            </p>
+            <p>
+            در این فرمول P<sub>AW</sub> فشار راه هوائی t زمان، k ضریب ثابت، و b پارامتری است که نشان دهنده شدت و جهت انحنای منحنی فشار - زمان می باشد. اگر b = 1 باشد، در این صورت منحنی فشار یک خط مشتقیم خواهد بود. یعنی مقدار کمپلیانس در طول دم تغییر نمی کند. اگر b < 1 باشد، با گذشت زمان در طول دم بتدریج فشار کاهش می یابد و تحدب منحنی فشار بسوی بالا (تقعر آن بسمت پائین) است. یعنی مقدار کمپلیانس در طول دم افزایش می یابد که نشان دهنده بازگشائی ریه در طول دم است. اگر b > 1 باشد، با گذشت زمان در طول دم بتدریج فشار بیشتر از قبل افزایش می یابد و تحدب منحنی فشار بسوی پائین (تقعر آن بسمت بالا) است. یعنی مقدار کمپلیانس در طول دم کاهش می یابد که نشان دهنده اتساع مفرط ریه در طول دم است. پارامتر b را اندکس استرس نامیده اند و بعضی ونتیلاتورها این پارامتر را بصورت خودکار محاسبه میکنند.
+            </p>
+            <img src="2-7.jpg" width="100%" />
+            <p>
+            اندکس استرس در کنترل حجمی:<br/>
+            ۱ - اگر کمتر از یک بود، حجم جاری را باید زیاد کرد<br/>
+            ۲ - اگر کمتر از یک بود، PEEP را باید زیاد کرد<br/>
+            ۳ - اگر بیشتر از یک بود، حجم جاری را باید کم کرد<br/>
+            ۴ - اگر بیشتر از یک بود، PEEP را باید کم کرد<br/>
+            ۵ - ۲ و ۳ و ۴ صحیح است
+            </p>
+            </div>
+            <div data-role="footer"><button id="toggleanswer" data-icon="check">پاسخ</button><script>$( "#toggleanswer" ).click(function() {$("#toggleanswer").text("۵ = پاسخ");});</script>
+                <h1>دکتر محمود سقائی</h1>
+            </div>
+        </div>
+    </body>
+
+</html>

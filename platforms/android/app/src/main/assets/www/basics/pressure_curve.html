@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>منحنی فشار</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Language" content="fa">
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/rtl.jquery.mobile-1.4.0.js"></script>
+        <link href="../css/themes/default/rtl.jquery.mobile-1.4.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="pressure_curve">
+            <div data-role="header">
+                <a rel="external" href="index.html" data-icon="back" data-iconpos="left">بازگشت</a>
+                <h1>منحنی فشار</h1>
+            </div>
+            <div data-role="content">
+            <h1>منحنی فشار</h1>
+            <p>
+            در هنگام ونتیلاسیون مکانیکی، منحنی فشار همیشه مثبت است. وقتی که فشار پایه منحنی بیشتر از صفر باشد نشان دهنده وجود PEEP می باشد. در صورت وقوع تنفس حمایت شده فشار راه هوائی در طی مدت انتقال حجم به داخل ریه از PEEP بالاتر میرود.
+            </p>
+            <img src="1-4.jpg" width="100%" />
+            <p>
+            منحنی فشار نشان دهنده فشار در …………………… می‌باشد
+<br/>
+۱ – در خروجی جریان گاز ونتیلاتور<br/>
+۲ – در راه هوائی پروکسیمال<br/>
+۳ – در انتهای لوله تراشه<br/>
+۴ – در حبابچه<br/>
+۵ - در سطح دریا
+            </p>
+            <p style="display: none;" id="detailedinfo">
+            برخی ونتیلاتورها مستقیما در راه هوائی پروکسیمال بین قطعه Y و لوله تراشه اندازه میگیرند. برخی دیگر در دو محل یکی نزدیک والو دمی و دیگری بازدمی اندازه میگیرند و سپس با دانستن مقاومت لوله های ونتیلاتور فشار راه هوائی پروکسیمال را محاسبه میکنند
+            </p>
+            </div>
+            <div data-role="footer"><button id="toggleanswer" data-icon="check">پاسخ</button><script>$( "#toggleanswer" ).click(function() {$("#toggleanswer").text("۲ = پاسخ");$("#detailedinfo").toggle(true);});</script>
+                <h1>دکتر محمود سقائی</h1>
+            </div>
+        </div>
+    </body>
+
+</html>

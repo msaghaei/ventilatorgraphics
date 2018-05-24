@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>فشار رانش در کنترل فشاری</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Language" content="fa">
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/rtl.jquery.mobile-1.4.0.js"></script>
+        <link href="../css/themes/default/rtl.jquery.mobile-1.4.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="driving_pressure_pc">
+            <div data-role="header">
+                <a rel="external" href="index.html" data-icon="back" data-iconpos="left">بازگشت</a>
+                <h1>فشار رانش در کنترل فشاری</h1>
+            </div>
+            <div data-role="content">
+            <h1>فشار رانش در کنترل فشاری</h1>
+            <p>
+            فشار رانش (ΔP) یا فشار جاری (tidal) فشار الاستیکی لازم برای انبساط سیستم تنفسی است (ΔP = VT / C<sub>STAT</sub>). در کنترل قشاری چنانچه مدت زمان دم به اندازه کافی برای رسید شدت جریان دمی به صفر باشد و autoPEEP وجود نداشته باشد، در این صورت ΔP برابر با P<sub>INSP</sub> تنظیم شده بر روی ونتیلاتور می باشد. بنابراین برای اندازه گیری ΔP، می توان یک انسداد پایان دمی برای اندازه گیری فشار پلاتو و یک انسداد پایان بازدمی برای اندازه گیری PEEP<sub>TOT</sub> هر کدام بمدت ۳ - ۵ ثانیه انجام داد.
+            </p>
+            <p style="direction: ltr;" align="center">
+            ΔP = P<sub>PLAT</sub> - PEEP<sub>TOT</sub>
+            </p>
+            <p>
+                <a href="#popupVideo" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-left ui-icon-video">فشار رانش در کنترل فشاری</a>
+                <div data-role="popup" id="popupVideo" class="ui-content">
+                    <video controls="true" width="100%" height="100%">
+                        <source src="https://download-tls-cdn.edge-cdn.net/videodb/5501/videodb_5501_53500_10731628_hp.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <p>
+                    فشار رانش در کنترل فشاری
+                    </p>
+                </div>
+            </p>
+            <img src="3-9.jpg" width="100%" />
+            <p>
+            کدام متغییر زیر مورد استفاده برای محاسبه فشار رانش نمی باشد؟<br/>
+            ۱ - حجم جاری<br/>
+            ۲ - autoPEEP<br/>
+            ۳ - P<sub>PLAT</sub><br/>
+            ۴ - زمان دم<br/>
+            ۵ - کمپلیانس استاتیک
+            </p>
+            </div>
+            <div data-role="footer"><button id="toggleanswer" data-icon="check">پاسخ</button><script>$( "#toggleanswer" ).click(function() {$("#toggleanswer").text("۴ = پاسخ");});</script>
+                <h1>دکتر محمود سقائی</h1>
+            </div>
+        </div>
+    </body>
+
+</html>

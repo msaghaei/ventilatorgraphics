@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>منحنی فشار در مدل RC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Language" content="fa">
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/rtl.jquery.mobile-1.4.0.js"></script>
+        <link href="../css/themes/default/rtl.jquery.mobile-1.4.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="the_pressure_curve_for_the_rc_model_vc">
+            <div data-role="header">
+                <a rel="external" href="index.html" data-icon="back" data-iconpos="left">بازگشت</a>
+                <h1>منحنی فشار در مدل RC</h1>
+            </div>
+            <div data-role="content">
+            <h1>منحنی فشار در مدل RC</h1>
+            <p>
+            در کنترل حجمی با شدت جریان مربع شکل، چنانچه تنها هر دو جزء مدل یعنی مقاومت و الاستانس وجود داشته باشد (به عنوان مثال لوله تراشه و بالون هر دو باشد)، در این صورت منحنی فشار یک افزایش سریع اولیه ناشی از مقاومت دارد (فشار مقاومتی)، و بدنبال آن افزایش تدریجی و خطی در فشار در طول دم روی میدهد که شیب آن بستگی به الاستانس سیستم تنفسی دارد (فشار الاستیکی). همچنانکه در معادله فشار مشهود است، فشار تابعی از کمپلیانس، حجم جاری، مقاومت و شدت جریان می باشد.
+            </p>
+            <img src="2-5.jpg" width="100%" />
+            <p>
+            در کنترل حجمی، منحنی فشار در طول دم تحت تاثیر کدام قرار میگیرد:<br/>
+            ۱ - حجم جاری<br/>
+            ۲ - شدت جریان<br/>
+            ۳ - مقاومت<br/>
+            ۴ - کمپلیانس<br/>
+            ۵ - تمام موارد فوق
+            </p>
+            </div>
+            <div data-role="footer"><button id="toggleanswer" data-icon="check">پاسخ</button><script>$( "#toggleanswer" ).click(function() {$("#toggleanswer").text("۵ = پاسخ");});</script>
+                <h1>دکتر محمود سقائی</h1>
+            </div>
+        </div>
+    </body>
+
+</html>

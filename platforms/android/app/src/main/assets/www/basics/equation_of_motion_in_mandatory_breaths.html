@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>معادله حرکت ریه هنگام تنفس اجباری</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Language" content="fa">
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/rtl.jquery.mobile-1.4.0.js"></script>
+        <link href="../css/themes/default/rtl.jquery.mobile-1.4.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="equation_of_motion_in_mandatory_breaths">
+            <div data-role="header">
+                <a rel="external" href="index.html" data-icon="back" data-iconpos="left">بازگشت</a>
+                <h1>معادله حرکت ریه هنگام تنفس اجباری</h1>
+            </div>
+            <div data-role="content">
+            <h1>معادله حرکت ریه هنگام تنفس اجباری</h1>
+            <p>
+            معادله حرکت ریه در واقع بالانس بین نیروهای وارد به ریه را نشان میدهد. در هر لحظه در طول دم فشار راه هوائی برابر با مجموع فشارهای زیر است:<br/>
+            - فشار لحظه صفر<br/>
+            - فشار مقاومتی (P<sub>RES</sub>). فشار لازم برای فائق آمدن به مقاومت راه هوائی. P<sub>RES</sub> برابر با حاصل ضرب مقاومت راه هوائی در شدت جریان دمی است.<br/>
+            - فشار الاستیک (P<sub>EL</sub>. فشار لازم برای فائق آمدن بر کمپلیانس ریه و قفسه صدری. P<sub>EL</sub> برابر با حاصل تقسیم حجم جاری بر کمپلیانس سیستم تنفس می باشد.
+            </p>
+            <p style="direction: ltr;" align="center">
+            P<sub>AW</sub> = PEEP<sub>TOT</sub> + P<sub>RES</sub> + P<sub>EL</sub><br/>
+            = PEEP<sub>TOT</sub> + (tidal volume / compliance) + (flow x resistance)<br/>
+            P<sub>AW</sub> - PEEP<sub>TOT</sub> = (tidal volume / compliance) + (flow x resistance)
+            </p>
+            <p>
+            در این معادله PEEP<sub>TOT</sub> فشار داخل ریه در انتهای بازدم است که بستگی به مقدار PEEP تنظیم شده بر روی ونتیلاتور و همچنین بستگی به مقدار تحلیه شدن ریه در قبل از دم دارد. همچنانکه در شکل آخر معادله حرکت ریه دیده میشود، برای شروع جریان دمی ابتدا لازم است که فشار ونتیلاتور از فشار PEEP<sub>TOT</sub> بیشتر شود.
+            </p>
+            <img src="1-10.jpg" width="100%" />
+            <p>
+            تحت ونتیلاسیون مکانیکی فشار راه هوائی به کدام عامل یا عوامل زیر بستگی دارد؟
+<br/>
+۱ – کمپلیانس ریه و جدار سینه<br/>
+۲ – شدت جریان<br/>
+۳ – Auto-PEEP<br/>
+۴ – حجم جاری<br/>
+۵ – تمام موارد فوق
+            </p>
+            <p style="display: none;" id="detailedinfo">
+چنانچه هر کدام از اینها مسبب Auto-PEEP باشد جواب ۳ صحیح است.
+            </p>
+            </div>
+            <div data-role="footer"><button id="toggleanswer" data-icon="check">پاسخ</button><script>$( "#toggleanswer" ).click(function() {$("#toggleanswer").text("۵ = پاسخ");$("#detailedinfo").toggle(true);});</script>
+                <h1>دکتر محمود سقائی</h1>
+            </div>
+        </div>
+    </body>
+
+</html>

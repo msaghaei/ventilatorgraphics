@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>ثابت زمانی بازدم</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Language" content="fa">
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/rtl.jquery.mobile-1.4.0.js"></script>
+        <link href="../css/themes/default/rtl.jquery.mobile-1.4.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="expiratory_time_constant">
+            <div data-role="header">
+                <a rel="external" href="index.html" data-icon="back" data-iconpos="left">بازگشت</a>
+                <h1>ثابت زمانی بازدم</h1>
+            </div>
+            <div data-role="content">
+            <h1>ثابت زمانی بازدم</h1>
+            <p>
+            بعضی ونتیلاتورها ثابت زمانی بازدم را در تمام مدها من جمله مدهای غیرتهاجمی اندازه می گیرند و نشان میدهند. در صورتی که بازدم فعال و نشت وجود نداشته باشد این اندازه گیری دقیق است.<br/>
+            در بیماری که لوله تراشه دارد و ریه های وی طبیعی است مقدار ثابت زمانی بازدم بین 0.5 الی 0.7 ثانیه می باشد.<br/>
+            در صورت کاهش کمپلیانس ریه یا قفسه صدری (مثلا ARDS) ثابت زمانی کاهش می یابد (کمتر از 0.5).<br/>
+            افزایش مقاومت راه هوائی (یا لوله تراشه) سبب افزایش ثابت زمانی بازدمی میگردد (بیشتر از 0.7). مانند COPD.<br/>
+            ثابت زمانی بازدمی تعیین کننده زمان لازم برای تخلیه کامل ریه در هر مدی می باشد. بنابراین اگر مدت زمان بازدم کمتر از پنج ثابت زمانی باشد، احتمال تخلیه ناکامل هوا و در نتیجه احتباس هوا در ریه و اتوپیپ وجود دارد. یعنی PEEP<sub>TOT</sub> از PEEP تنظیم شده بر روی ونتیلاتور بیشتر میشود.
+            </p>
+            <p>
+            جدول زیر مقدار کمپلیانس، مقاومت و ثابت زمانی را تحت شرایط مختلف طبیعی نشان میدهد.
+            </p>
+            <table style="direction: ltr;" data-role="table" id="table1" data-mode="columntoggle" data-column-btn-text="انتخاب وضعیت..." class="ui-responsive">
+                <thead>
+                    <tr>
+                        <th style="text-align: left;"></th>
+                        <th style="text-align: left;" data-priority="1">طبیعی</th>
+                        <th style="text-align: left;" data-priority="2">ARDS</th>
+                        <th style="text-align: left;" data-priority="3">COPD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="text-align: left;">
+                            <div style="direction: ltr;">C<sub>STAT</sub> (ml/cmH2O)</div>
+                        </th>
+                        <td style="text-align: left;">
+                            45 - 65
+                        </td>
+                        <td style="text-align: left;">
+                            &lt; 45
+                        </td>
+                        <td style="text-align: left;">
+                            50 - 80
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left;">
+                            <div style="direction: ltr;">R<sub>INS</sub> (cmH2O/L/s)</div>
+                        </th>
+                        <td style="text-align: left;">
+                            10 - 15
+                        </td>
+                        <td style="text-align: left;">
+                            10 - 15
+                        </td>
+                        <td style="text-align: left;">
+                            16 - 33
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left;">
+                            <div style="direction: ltr;">RC<sub>EXP</sub> (s)</div>
+                        </th>
+                        <td style="text-align: left;">
+                            0.5 - 0.7
+                        </td>
+                        <td style="text-align: left;">
+                            &lt; 0.5
+                        </td>
+                        <td style="text-align: left;">
+                            &gt; 0.7
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+            ثابت زمانی بازدم:<br/>
+            ۱ - فقط در حضور تنفس غیرفعال دقیق است<br/>
+            ۲ - نشان دهنده وضعیت بیماری سیستم تنفسی است<br/>
+            ۳ - واحد آن ثانیه است<br/>
+            ۴ - مقدار آن در بیماران دارای لوله تراشه و آنهائیکه تهویه غیرتهاجمی میگیرند مختصری متفاوت است<br/>
+            ۵ - تمام موارد فوق
+            </P>
+            <p style="display: none;" id="detailedinfo">
+            بخاطر وجود لوله تراشه در تهویه تهاجمی مثدار RC<sub>EXP</sub> با تهویه غیرتهاجمی اندکی متفاوت است
+            </p>
+            </div>
+            <div data-role="footer"><button id="toggleanswer" data-icon="check">پاسخ</button><script>$( "#toggleanswer" ).click(function() {$("#toggleanswer").text("۵ = پاسخ");$("#detailedinfo").toggle(true);});</script>
+                <h1>دکتر محمود سقائی</h1>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>مقدار شدت جریان هنگام تهیه لوپ فشار حجم</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Language" content="fa">
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/rtl.jquery.mobile-1.4.0.js"></script>
+        <link href="../css/themes/default/rtl.jquery.mobile-1.4.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="flow_when_performing_the_pv_loop">
+            <div data-role="header">
+                <a rel="external" href="index.html" data-icon="back" data-iconpos="left">بازگشت</a>
+                <h1>مقدار شدت جریان هنگام تهیه لوپ فشار حجم</h1>
+            </div>
+            <div data-role="content">
+            <h1>مقدار شدت جریان هنگام تهیه لوپ فشار حجم</h1>
+            <p>
+            برای ارزیابی ویژگی های الاستیک (و فقط ویژگی های الاستیک) سیستم تنفس، میزان شدت جریان هنگام انبساط و تخلیه ریه باید کمتر از ده لیتر در دقیقه باشد (10L/min). اگر شدت جریان بیش از این مقدار باشد، جزء فشاری نیز افزوده میشود و لوپ را به سمت راست (فشار بالاتر) شیفت میدهد. بنابراین قبل از تفسیر باید اعتبار لوپ فشار-حجم را با بررسی لوپ شدت جریان-فشار بررسی کرد.
+            </p>
+            <img src="7-2.jpg" width="100%" />
+            <p>
+            هنگام مانور فشار-حجم، شدت جریان:<br/>
+            ۱ - ممکن است شکل لوپ را تحت تاثیر قرار دهد<br/>
+            ۲ - ممکن است سبب شیفت لوپ در جهت محور X گردد<br/>
+            ۳ - باید کمتر از 10 لیتر در دقیقه باشد<br/>
+            ۴ - بستگی به کمپلیانس دارد<br/>
+            ۵ - تمام موارد فوق
+            </p>
+            <p style="display: none;" id="detailedinfo">
+            پاسخ ۵<br/>
+            توضیح گزینه ۳ - ونتیلاتور های جدید مجهز به ابزار تعیین لوپ فشار-حجم هستند. در بعضی از آنها کاربر مقدار شدت جریان و دامنه تغییر فشار را تنظیم می کند. بنابراین در این نوع ونتیلاتور مدت زمان مانور بستگی به کمپلیانس دارد. در بعضی دیگر کاربر باید سرعت صعود فشار (ramp) و دامنه تغییر فشار را تنظیم کند (مثلا ۲ سانتی متر آب در ثانیه). در این نوع از ونتیلاتورها مدت زمان مانور ثابت است ولی مقدار شدت جریان در هر مرحله بستگی به کمپلیانس دارد. مانند تصویر فوق
+            </p>
+            </div>
+            <div data-role="footer"><button id="toggleanswer" data-icon="check">پاسخ</button><script>$( "#toggleanswer" ).click(function() {$("#toggleanswer").text("۵ = پاسخ");$("#detailedinfo").toggle(true);});</script>
+                <h1>دکتر محمود سقائی</h1>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>میزان نشت</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Language" content="fa">
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/rtl.jquery.mobile-1.4.0.js"></script>
+        <link href="../css/themes/default/rtl.jquery.mobile-1.4.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="leak_rate">
+            <div data-role="header">
+                <a rel="external" href="index.html" data-icon="back" data-iconpos="left">بازگشت</a>
+                <h1>میزان نشت</h1>
+            </div>
+            <div data-role="content">
+            <h1>میزان نشت</h1>
+            <p>
+            وقتی که ترایگر شدت جریانی برای دم بکار میرود، اگر علاوه بر متفاوت بودن سطح زیر منحنی شدت جریان بین دم و بازدم، در پایان بازدم (قبل از ترایگر دمی)، شدت جریان بالاتر از خط پایه (مثبت) باشد، ما به وجود یک نشت مداوم مشکوک می شویم. سپس می توان مقدار نشت را به ازای یک مقدار خاص PEEP بدست آورد. در نشت مداوم، میزان نشت با افزایش فشار افزایش می یابد. اما اگر فقط سطح زیر منحنی شدت جریان، بین دم و بازدم تفاوت داشت ولی شدت جریان در پایان بازدم صفر بود، این پدیده علامت این است که نشت مداوم نیست و اساسا هنگام هواگیری ریه روی میدهد.
+            </p>
+            <img src="6-3.jpg" width="100%" />
+            <p>
+            در مورد وجود و نوع نشت کدام یک صحیح است؟<br/>
+            ۱ - وجود شدت جریان مثبت در پایان بازدم علامت نشت مداوم است<br/>
+            ۲ - وجود یک شدت جریان منفی در پایان بازدم علامت فقدان نشت تصادفی است<br/>
+            ۳ - قرار داشتن منحنی شدت جریان بر روی خط پایه در پایان بازدم نشانه نشت مداوم است<br/>
+            ۴ - قرار داشتن منحنی شدت جریان بر روی خط پایه در پایان بازدم نشانه نشت منقطع است<br/>
+            ۵ - در صورت وجود نشت تصادفی از ماسک تهویه غیرتهاجمی، فشار بازدمی کمتر از PEEP خواهد بود
+            </p>
+            <p style="display: none;" id="detailedinfo">
+            مورد ۵ - این یعنی وجود نشت از دریچه بازدمی
+            </p>
+            </div>
+            <div data-role="footer"><button id="toggleanswer" data-icon="check">پاسخ</button><script>$( "#toggleanswer" ).click(function() {$("#toggleanswer").text("۱ = پاسخ");$("#detailedinfo").toggle(true);});</script>
+                <h1>دکتر محمود سقائی</h1>
+            </div>
+        </div>
+    </body>
+
+</html>
